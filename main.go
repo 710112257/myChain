@@ -4,9 +4,7 @@ const (
 	targetBits=20
 )
 func main(){
-	bc := Newblockchain()
-	defer bc.db.Close()
 
-	cli := CLI{bc}
+	cli := CLI{}
 	cli.Run()
 }
